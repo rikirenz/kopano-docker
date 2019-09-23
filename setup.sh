@@ -326,7 +326,7 @@ INSECURE=$INSECURE
 # Docker Repository to push to/pull from
 docker_repo=zokradonh
 COMPOSE_PROJECT_NAME=kopano
-COMPOSE_FILE=docker-compose.yml:docker-compose.ports.yml
+COMPOSE_FILE=docker-compose.yml:docker-compose.ports.yml:grapi-explorer/grapi-explorer.yml
 
 # Modify below to build a different version, than the kopano nightly release
 #KOPANO_CORE_REPOSITORY_URL=https://serial:REPLACE-ME@download.kopano.io/supported/core:/final/Debian_9.0/
