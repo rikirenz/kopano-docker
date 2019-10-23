@@ -230,6 +230,7 @@ services:
     environment:
       - SERVICE_TO_START=grapi
       - TZ=${TZ}
+      - KCCONF_GRAPI_ENABLE_EXPERIMENTAL_ENDPOINTS=true
     env_file:
       - kopano_grapi.env
     networks:
@@ -251,6 +252,7 @@ services:
       - KCCONF_KAPID_LOG_LEVEL=DEBUG
       - KCCONF_KAPID_OIDC_ISSUER_IDENTIFIER=https://${FQDN}
       - KCCONF_KAPID_INSECURE=${INSECURE}
+      - KCCONF_GRAPI_ENABLE_EXPERIMENTAL_ENDPOINTS=true
     env_file:
       - kopano_kapi.env
     networks:
